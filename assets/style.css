@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -17,17 +18,21 @@ html{
   scroll-padding-top: 5.5rem;
   scroll-behavior: smooth;
 }
+
 header{
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0; 
+  left: 0; 
+  right: 0;
   background: #fff;
-  padding: 1rem 7%;
+  padding: 1.5rem 7%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
   box-shadow:  var(--box-shadow);
 }
+
 header.sticky{
     background: #fff;
     padding: 10px 100px;
@@ -53,8 +58,6 @@ header .navbar li{
   list-style: none;
   margin-left: 35px;
   font-size: 1.8rem;
-  margin-top: 25px;
-
 }
 header .navbar li a{
   text-decoration: none;
@@ -70,12 +73,15 @@ header .navbar li a:hover{
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+.mySlides > img{
+  height: 90vh;
 }
 
 /* Next & previous buttons */
@@ -111,8 +117,8 @@ header .navbar li a:hover{
   font-size: 30px;
   padding: 8px 12px;
   position: absolute;
-  bottom: -20px;
   width: 100%;
+  top: 60%;
   text-align: center;
 }
 
@@ -120,6 +126,7 @@ header .navbar li a:hover{
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
+  top: -60px !important;
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -139,6 +146,20 @@ header .navbar li a:hover{
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+.crushie{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  
+}
+
+.crushie .fa-heart{
+  font-size: 3rem;
+  color: red;
 }
 
 @-webkit-keyframes fade {
